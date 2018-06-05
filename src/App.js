@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import styled, {keyframes} from 'styled-components'
 
-const egg = keyframes`
+const warning = keyframes`
   0% {color: #beb4ab; transform: scale(1, 1);}
   50% {color: #a86e40; transform: scale(1.125, 1.125);}
   100% {color: #beb4ab; transform: scale(1, 1);}
@@ -112,7 +112,7 @@ const Input = styled.input`
 `
 const H3 = styled.h3 `
   align-items: center;
-  animation: ${props => props.warn === 'warns' ? `${egg} 1.6s ease-in-out 6 forwards` : 'none'};
+  animation: ${props => props.warn === 'warns' ? `${warning} 1.6s ease-in-out 6 forwards` : 'none'};
   color: #9a8f65;
   display: flex;
   font-weight: 100;
@@ -353,7 +353,7 @@ class App extends Component {
             <Button id="setval" value={this.state.changev} onClick={this.set}>_ SET</Button>
             <div className="choice">
            <Input id="time" value={this.state.change} onChange={this.handleChange}></Input>
-            <h5>{this.state.change} Minutes</h5>
+            <h5>Minutes</h5>
             </div>
           </div>
          </ChoicesDiv>
