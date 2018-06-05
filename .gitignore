@@ -9,6 +9,13 @@
 # production
 /build
 
+# packages imgs bak and logs
+*.zip
+*.log
+*.bak
+*.png
+*.ico
+
 # misc
 .DS_Store
 .env.local
