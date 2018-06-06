@@ -1,12 +1,12 @@
 {
   "short_name": "JHA Timer",
   "name": "JHA Work Timer",
-  "description": "A pomodoro timer built by me using Create React App.",
+  "description": "A Pomodoro timer built by John Hansen Artist using Create React App.",
   "dir": "ltr",
   "lang": "en",
   "display": "standalone",
   "orientation": "any",
-  "start_url": "",
+  "start_url": "https://linoxyn.github.io/worktimer/",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
