@@ -1,13 +1,29 @@
 {
-  "extends": "react-app",
-  "rules": {
-      "quotes": [
-          "error",
-          "single"
-      ],
-      "semi": [
-          "error",
-          "never"
-      ]
-  }
+    "extends": [
+        "react-app",
+        "prettier",
+        "prettier/react"
+    ],
+    "plugins": [
+        "prettier"
+    ],
+    "rules": {
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "never"
+        ],
+        "prettier/prettier": [
+            "error",
+            {
+                "trailingComma": "es5",
+                "singleQuote": true,
+                "semi": false,
+                "printWidth": 120
+            }
+        ]
+    }
 }
