@@ -11,6 +11,10 @@ You can find the most recent version of thier guide [here](https://github.com/fa
 [Styled Components](https://www.styled-components.com/docs) for styling the React components with CSS. Their documentation for use and tooling is excellent!
 
 
+## My gh-page running example
+[JHA Work Timer](https://linoxyn.github.io/worktimer/)
+
+
 ## Setting up
 If you would like to checkout this repo. You will need <code>[node](https://nodejs.org/en/)</code>  installed. You can use <code>[yarn](https://yarnpkg.com/en/)</code> instead of <code>npm</code>. Now start the process with the following:
 ```
