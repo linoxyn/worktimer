@@ -55,25 +55,17 @@ h3,
 h4,
 h5,
 h6 {
-  margin-bottom: 0.125rem;
+  margin-bottom: 0;
   margin-top: 0;
 }
 
 p {
   line-height: 1.3rem;
+  margin-bottom: 0;
   margin-top: 0;
 
 }
-@media (max-width: 900px) {
-  p {
-      margin-bottom: 0.5rem;
-  }
-}
-@media (max-width: 1200px) {
-  p {
-      margin-bottom: 0.65rem;
-  }
-}
+
 a {
   text-decoration: none;
   color: inherit;

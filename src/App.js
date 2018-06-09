@@ -18,6 +18,7 @@ const Heading = styled.div`
   border-bottom: 1px solid rgba(185, 177, 148, 0.34);
   display: flex;
   justify-content: space-around;
+  /* width: 14rem; */
   > h1 {
     color: #9a8f65;
     font-weight: 100;
@@ -27,33 +28,35 @@ const P = styled.p`
   color: #beb4ab;
   font-size: 0.66rem;
   font-weight: 200;
-  margin: 0;
   opacity: 0.66;
   text-align: center;
 `
 const TimeDiv = styled.div`
   align-items: center;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  width: 14rem;
   > div {
     min-height: 1.125em;
     padding: 0.25rem 0;
+    width: 100%;
     > h2 {
       color: #beb4ab;
       font-size: 2.75rem;
       font-weight: 200;
-      margin: 0 0 0.125rem;
+      padding-bottom: 0.125rem;
       text-align: center;
     }
   }
 `
 const ChoicesDiv = styled.div`
+  align-content: space-between;
   border-bottom: 1px solid rgba(185, 177, 148, 0.34);
   border-top: 1px solid rgba(185, 177, 148, 0.34);
   display: flex;
-  justify-content: center;
-  height: 100%;
-  padding: 0.25rem 0;
+  justify-content: space-between;
+  height: 6.25rem;
+  padding: 0.5rem 0 0.36rem;
   text-align: center;
   > div {
     align-content: space-between;
@@ -65,12 +68,10 @@ const ChoicesDiv = styled.div`
       height: 1.5rem;
       width: 1.5rem;
     }
-    > h5,
-    div h5 {
+    > h5 {
       color: #beb4ab;
       font-size: 0.75rem;
       font-weight: 100;
-      margin: 0.25rem 0;
     }
   }
 `
@@ -82,9 +83,9 @@ const Button = styled.button`
   color: #beb4ab;
   font-size: 1rem;
   font-family: 'Trebuchet MS', Helvetica, sans-serif;
-  margin: 0.5rem;
-  padding: 0.25rem 0.5rem;
+  padding: 0.25rem 0;
   transition: box-shadow, transform 860ms cubic-bezier(0.25, 0.8, 0.25, 1);
+  width: 4rem;
   &:hover {
     box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 12px, rgba(0, 0, 0, 0.12) 0px 6px 6px;
     color: #c0c0c0;
@@ -118,7 +119,8 @@ const H3 = styled.h3`
   display: flex;
   font-weight: 100;
   justify-content: center;
-  min-height: 2rem;
+  min-height: 2.125rem;
+  padding-bottom: 0.125rem;
   text-align: center;
 `
 
@@ -381,8 +383,8 @@ class App extends Component {
             </Button>
             <div className="choice">
               <Input id="time" value={this.state.change} onChange={this.handleChange} />
-              <h5>Minutes</h5>
             </div>
+            <h5>Minutes</h5>
           </div>
         </ChoicesDiv>
         <P>Keyboard: s - Start, p - Pause, r - Reset</P>
